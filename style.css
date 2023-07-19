@@ -1,9 +1,16 @@
+* {
+    box-sizing: border-box;
+}
+
 /* hide scrollbar but allow scrolling */
 body::-webkit-scrollbar {
     display: none;
     /* for Chrome, Safari, and Opera */
 }
-
+@font-face {
+    font-family: 'Heming';
+    src: url(./Heming\ Variable.ttf);
+}
 body {
     scroll-behavior: smooth;
     font-family: 'Roboto', sans-serif;
@@ -16,7 +23,8 @@ body {
 }
 
 h1 {
-    font-size: 75px;
+    font-family: 'Heming', sans-serif;
+    font-size: 100px;
     color: black;
     margin: 0;
     margin-top: 10px;
@@ -29,13 +37,13 @@ a {
 #projects,
 #resume,
 #contact,
-#section4,
+#galery,
 #header
 {
     position: fixed;
     width: 50%;
     height: 50%;
-    padding-left: 10px;
+    padding: 10px;
     -ms-overflow-style: none;
     scrollbar-width: none;
     overflow-y: scroll;
@@ -98,7 +106,8 @@ a {
     /* for Chrome, Safari, and Opera */
 }
 
-#section4 {
+#galery {
+    height: 50%;
     bottom: 0;
     right: 0;
     color: #000000;
@@ -106,7 +115,11 @@ a {
     background: linear-gradient(90deg, rgba(217, 217, 217, 1) 0%, rgba(255, 255, 255, 1) 100%);
 }
 
-#section4::-webkit-scrollbar {
+#galerieImage{
+    display: flex;
+}
+
+#galery::-webkit-scrollbar {
     display: none;
     /* for Chrome, Safari, and Opera */
 }
@@ -134,6 +147,27 @@ a {
     border: 8px solid rgb(255, 255, 255);
 }
 
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    -ms-flex: 33%; /* IE10 */
+    flex: 33%;
+    max-width: 33%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+  
 
 /* On screens that are 992px or less, set the background color to blue */
 @media screen and (max-width: 992px) {
@@ -141,3 +175,21 @@ a {
         font-size: 26px;
     }
 }
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
