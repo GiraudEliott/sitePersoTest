@@ -18,6 +18,8 @@ body {
     font-size: 20px;
     color: #000000;
     font-weight: 500;
+    height: 100%;
+    overflow: hidden;
 }
 
 
