@@ -5,13 +5,14 @@ body::-webkit-scrollbar {
 }
 
 body {
+    scroll-behavior: smooth;
     font-family: 'Roboto', sans-serif;
     font-size: 22px;
     color: #000000;
     font-weight: 500;
     height: 100%;
     overflow: hidden;
-    background-color: red;
+    background-color: rgb(255, 255, 255);
 }
 
 h1 {
