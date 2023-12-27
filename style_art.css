@@ -11,6 +11,7 @@ html {
   background-size: cover;
   cursor: url("./cursor.png"), auto;
   background-color: #000000;
+  scroll-behavior: smooth;
 }
 
 body {
