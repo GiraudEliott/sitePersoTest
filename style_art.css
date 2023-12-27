@@ -57,6 +57,12 @@ a {
   padding: 30px;
 }
 
+figcaption {
+  font-size: 1.2em;
+  font-style: italic;
+  color: rgb(70, 70, 70);
+}
+
 /* Styles pour les écrans de petite taille (par exemple, smartphones) */
 @media only screen and (max-width: 767px) {
   .container {
