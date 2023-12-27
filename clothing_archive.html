@@ -4,125 +4,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="preload.css"> <!-- Ajoutez un fichier de style pour l'écran de préchargement -->
     <link rel="stylesheet" href="style_clothing.css">
-
     <title>ARCHIVES OCCULT®</title>
 </head>
 
 <body>
-    <!DOCTYPE html>
-    <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style_clothing.css">
-        <title>ARCHIVES OCCULT®</title>
-    </head>
+    <div class="preload-screen">
+        <div class="loader"></div>
+    </div>
 
-    <body>     
+    <div class="container">
+        <a href="./index.html">INDEX</a>
+        <h1>OCCULT : CLOTHING</h1>
+        <a href="./art_archive.html">ART ARCHIVES</a>
 
-        <div class="container">
-            <a href="./index.html">INDEX</a>
-            <h1>OCCULT : CLOTHING</h1>
-            <a href="./art_archive.html">ART ARCHIVES</a>
-
-            <h1 class="date">2023</h1>
-            <div class="image-section">
-                <figure>
-                    <img src="./clothingImg/image (17).png" alt="Image 17">
-                    <figcaption>MANHUNT T-SHIRT</figcaption>
-                </figure>
-                <figure>
-                    <img src="./clothingImg/image (16).png" alt="Image 16">
-                    <figcaption>MAD T-SHIRT</figcaption>
-                </figure>
-                <figure>
-                    <img src="./clothingImg/image (15).png" alt="Image 15">
-                    <figcaption>SKULL T-SHIRT</figcaption>
-                </figure>
-                <figure>
-                    <img src="./clothingImg/image (14).png" alt="Image 14">
-                    <figcaption>GLOCK T-SHIRT</figcaption>
-                </figure>
-                <figure>
-                    <img src="./clothingImg/image (20).png" alt="Image 21">
-                    <figcaption>
-                        Ḡ̸̡̼̼̦͇̤̣͉͖̬͓͚̻̮̥̼̿̀̆̾͗̐̅̄͐͠Ǫ̵̨̛̛̛͖̩͓̘̜̥̪̜̤̫̜͖̦̗̗̖̫̦͔͇̩̝͎̣̬̹̣̹̞͔̺̪̤͋͗̽̊̈́͒̉̓̽͐͌̿̉̉̈́̊̊̎͋͐̾̏̾͐̀̓̀̅͆̅̌͆̓̇͗͒́̐̓̉͂͌̕͘͜͠͠ͅB̶̧͍̫̭̝̯̖̤͖̪̭̙͓͖͇͙̹͔͎̤͙̹̙͇͍̞̜̤̤͓̼͕̮̔̔̽͑̿̆̔̀̇̍̽̊̃͗̐̅́̂͂́̆̿̄͜͝ͅĻ̸̡̳̦̝̹͇̭͕̻̙͍̣̺̻̗͓̪̪̲̦̻̻̬͚͖̰̬͇̰͈̤̤͕̄̈̏̃̉̀͋̍́̀̓̆̓͐̈́͌̔͑̅̓́͋̓̚͝͝͝͝Į̶̲̭̙̝̣̮͓̥̝͍͚̺̮̲̪̜̞͖̣̠͎̟͇̖̜̳̫̹̱̜̯͍͕̞̻͚͔͂̒͒̃̎͋̆̅̊̿̌͋̈́̊́͌̈̊͐̉̂͐̀̐̆̄̓̀͐̈́͂̍͊̊̓͗̕̚̕̚Ņ̸̙̲̘͚͍́̄̾̐̈̔̊͆͑͂͆̿̅̀̽̽̔̇̈́̒̂̓͗̋́̄̀͋͋̐͛́̑͗̽͐̑̎̾́͒̈́͂̕͘̚͝͝
-                        ̵̛̛̛̜͉̯̗̝͎͎͙̯̥͇̣̣̝͔̣̖͌̌̏̒̍̎̔̈͌͋͐̔́͛́͐̀̅͗͒͗̀͌̈́̂̀͌̓̄͐̕͘͠M̵̢̨̧̨̧̡̨̢̛̟̯̣͍̺̬̻̪̖̯̼̜͖̩̤̥̤͙̝̯͈͓̗̱͙̯͓͖͇̯̫̜̭̬̈̆̌̋̆̒̈́̇͛̎́͋͐̈́͒̒̽̈́̈́̔̍̀̋͐͛̍̚͠͝͝ͅͅO̵̢̨̨̙͚̫̦͓͖͖̬͈̫͉̻̞̬̭͍̝̜̣̿̐̄͌̃̽̇̇̔̽̅̆̏̈́̇̄̋̀͆̐̿͋͆̋̓̇͛̆̿͋͂̕̚̚͝͠͠ͅD̶̨̡͈̘̹͎̣̹̗̹͙̙̩͇̗̹̲̱͈̭̫̣̮̲͉̞͖̤͍͖̩̳̪̱̳̠̝̞̖̖̣͎̒̂̏̉̇͌͆̋̈̂̌̈́̀̍̈́̀̋͌̈́̿͆̈́̕̕͘̕͜ͅE̷̡̬͍̳̝̬͍̤̻͎͈͙̠̬̦̙̫̼̥̙̰͚͉̙̞̱̯̖͈̙̟̳͍̘̭̖̥͆͛́̔͂͛̑̐̑̀̑̃͂̔̓́̎͆͛͗̎̈̅́͑̿͌̌͐̏̋͋̈́̔̚̚͜͜͝ͅT-SHIRT
-                    </figcaption>
-                </figure>
-            </div>
-
-            <h1 class="date">ALL CLOTHING</h1>
-            <div class="image-section">
-                <!-- Ajoutez des balises <figure> autour de toutes les images ici -->
-                <figure>
-                    <img src="./clothingImg/image (19).png" alt="Image 20">
-                    <figcaption>WEB T-SHIRT (BACK)</figcaption>
-                </figure>
-                <figure>
-                    <img src="./clothingImg/image (18).png" alt="Image 18">
-                    <figcaption>WEB T-SHIRT (FRONT)</figcaption>
-                </figure>
-                <figure>
-                    <img src="./clothingImg/image (13).png" alt="Image 13">
-                    <figcaption>RISE AND FALL HOODIE (BACK)</figcaption>
-                </figure>
-                <figure>
-                    <img src="./clothingImg/image (12).png" alt="Image 12">
-                    <figcaption>RISE AND FALL HOODIE (FRONT)</figcaption>
-                </figure>
-                <figure>
-                    <img src="./clothingImg/image (11).png" alt="Image 11">
-                    <figcaption>HERRLICHKEIT LONG SLEEVE SHIRT </figcaption>
-                </figure>
-                <figure>
-                    <img src="./clothingImg/image (10).png" alt="Image 10">
-                    <figcaption>AMOR ANARCHY HOODIE (BACK)</figcaption>
-                </figure>
-                <figure>
-                    <img src="./clothingImg/image (9).png" alt="Image 9">
-                    <figcaption>AMOR ANARCHY HOODIE (FRONT)</figcaption>
-                </figure>
-                <figure>
-                    <img src="./clothingImg/image (8).png" alt="Image 8">
-                    <figcaption>CONGREGATION T-SHIRT</figcaption>
-                </figure>
-                <figure>
-                    <img src="./clothingImg/image (7).png" alt="Image 7">
-                    <figcaption>POSTHUMAN T-SHIRT</figcaption>
-                </figure>
-                <figure>
-                    <img src="./clothingImg/image (6).png" alt="Image 6">
-                    <figcaption>MAKE IT WORSE T-SHIRT</figcaption>
-                </figure>
-                <figure>
-                    <img src="./clothingImg/image (5).png" alt="Image 5">
-                    <figcaption>ANGEL T-SHIRT (DARK)</figcaption>
-                </figure>
-                <figure>
-                    <img src="./clothingImg/image (4).png" alt="Image 4">
-                    <figcaption>ANGEL T-SHIRT (LIGHT)</figcaption>
-                </figure>
-                <figure>
-                    <img src="./clothingImg/image (3).png" alt="Image 3">
-                    <figcaption>LURKER T-SHIRT</figcaption>
-                </figure>
-                <figure>
-                    <img src="./clothingImg/image (2).png" alt="Image 2">
-                    <figcaption>INFERNO T-SHIRT</figcaption>
-                </figure>
-                <figure>
-                    <img src="./clothingImg/image (1).png" alt="Image 1">
-                    <figcaption>SKELETONS T-SHIRT</figcaption>
-                </figure>
-                <!-- Fin des balises <figure> -->
-            </div>
+        <h1 class="date">2023</h1>
+        <div class="image-section">
+            <figure>
+                <img src="./clothingImg/image (17).png" alt="Image 17">
+                <figcaption>MANHUNT T-SHIRT</figcaption>
+            </figure>
+            <figure>
+                <img src="./clothingImg/image (16).png" alt="Image 16">
+                <figcaption>MAD T-SHIRT</figcaption>
+            </figure>
+            <figure>
+                <img src="./clothingImg/image (15).png" alt="Image 15">
+                <figcaption>SKULL T-SHIRT</figcaption>
+            </figure>
+            <figure>
+                <img src="./clothingImg/image (14).png" alt="Image 14">
+                <figcaption>GLOCK T-SHIRT</figcaption>
+            </figure>
+            <figure>
+                <img src="./clothingImg/image (20).png" alt="Image 21">
+                <figcaption>
+                    Ḡ̸̡̼̼̦͇̤̣͉͖̬͓͚̻̮̥̼̿̀̆̾͗̐̅̄͐͠Ǫ̵̨̛̛̛͖̩͓̘̜̥̪̜̤̫̜͖̦̗̗̖̫̦͔͇̩̝͎̣̬̹̣̹̞͔̺̪̤͋͗̽̊̈́͒̉̓̽͐͌̿̉̉̈́̊̊̎͋͐̾̏̾͐̀̓̀̅͆̅̌͆̓̇͗͒́̐̓̉͂͌̕͘͜͠͠ͅB̶̧͍̫̭̝̯̖̤͖̪̭̙͓͖͇͙̹͔͎̤͙̹̙͇͍̞̜̤̤͓̼͕̮̔̔̽͑̿̆̔̀̇̍̽̊̃͗̐̅́̂͂́̆̿̄͜͝ͅĻ̸̡̳̦̝̹͇̭͕̻̙͍̣̺̻̗͓̪̪̲̦̻̻̬͚͖̰̬͇̰͈̤̤͕̄̈̏̃̉̀͋̍́̀̓̆̓͐̈́͌̔͑̅̓́͋̓̚͝͝͝͝Į̶̲̭̙̝̣̮͓̥̝͍͚̺̮̲̪̜̞͖̣̠͎̟͇̖̜̳̫̹̱̜̯͍͕̞̻͚͔͂̒͒̃̎͋̆̅̊̿̌͋̈́̊́͌̈̊͐̉̂͐̀̐̆̄̓̀͐̈́͂̍͊̊̓͗̕̚̕̚Ņ̸̙̲̘͚͍́̄̾̐̈̔̊͆͑͂͆̿̅̀̽̽̔̇̈́̒̂̓͗̋́̄̀͋͋̐͛́̑͗̽͐̑̎̾́͒̈́͂̕͘̚͝͝
+                    ̵̛̛̛̜͉̯̗̝͎͎͙̯̥͇̣̣̝͔̣̖͌̌̏̒̍̎̔̈͌͋͐̔́͛́͐̀̅͗͒͗̀͌̈́̂̀͌̓̄͐̕͘͠M̵̢̨̧̨̧̡̨̢̛̟̯̣͍̺̬̻̪̖̯̼̜͖̩̤̥̤͙̝̯͈͓̗̱͙̯͓͖͇̯̫̜̭̬̈̆̌̋̆̒̈́̇͛̎́͋͐̈́͒̒̽̈́̈́̔̍̀̋͐͛̍̚͠͝͝ͅͅO̵̢̨̨̙͚̫̦͓͖͖̬͈̫͉̻̞̬̭͍̝̜̣̿̐̄͌̃̽̇̇̔̽̅̆̏̈́̇̄̋̀͆̐̿͋͆̋̓̇͛̆̿͋͂̕̚̚͝͠͠ͅD̶̨̡͈̘̹͎̣̹̗̹͙̙̩͇̗̹̲̱͈̭̫̣̮̲͉̞͖̤͍͖̩̳̪̱̳̠̝̞̖̖̣͎̒̂̏̉̇͌͆̋̈̂̌̈́̀̍̈́̀̋͌̈́̿͆̈́̕̕͘̕͜ͅE̷̡̬͍̳̝̬͍̤̻͎͈͙̠̬̦̙̫̼̥̙̰͚͉̙̞̱̯̖͈̙̟̳͍̘̭̖̥͆͛́̔͂͛̑̐̑̀̑̃͂̔̓́̎͆͛͗̎̈̅́͑̿͌̌͐̏̋͋̈́̔̚̚͜͜͝ͅT-SHIRT
+                </figcaption>
+            </figure>
         </div>
-    </body>
 
-    </html>
+        <h1 class="date">ALL CLOTHING</h1>
+        <div class="image-section">
+            <!-- Ajoutez des balises <figure> autour de toutes les images ici -->
+            <figure>
+                <img src="./clothingImg/image (19).png" alt="Image 20">
+                <figcaption>WEB T-SHIRT (BACK)</figcaption>
+            </figure>
+            <figure>
+                <img src="./clothingImg/image (18).png" alt="Image 18">
+                <figcaption>WEB T-SHIRT (FRONT)</figcaption>
+            </figure>
+            <figure>
+                <img src="./clothingImg/image (13).png" alt="Image 13">
+                <figcaption>RISE AND FALL HOODIE (BACK)</figcaption>
+            </figure>
+            <figure>
+                <img src="./clothingImg/image (12).png" alt="Image 12">
+                <figcaption>RISE AND FALL HOODIE (FRONT)</figcaption>
+            </figure>
+            <figure>
+                <img src="./clothingImg/image (11).png" alt="Image 11">
+                <figcaption>HERRLICHKEIT LONG SLEEVE SHIRT </figcaption>
+            </figure>
+            <figure>
+                <img src="./clothingImg/image (10).png" alt="Image 10">
+                <figcaption>AMOR ANARCHY HOODIE (BACK)</figcaption>
+            </figure>
+            <figure>
+                <img src="./clothingImg/image (9).png" alt="Image 9">
+                <figcaption>AMOR ANARCHY HOODIE (FRONT)</figcaption>
+            </figure>
+            <figure>
+                <img src="./clothingImg/image (8).png" alt="Image 8">
+                <figcaption>CONGREGATION T-SHIRT</figcaption>
+            </figure>
+            <figure>
+                <img src="./clothingImg/image (7).png" alt="Image 7">
+                <figcaption>POSTHUMAN T-SHIRT</figcaption>
+            </figure>
+            <figure>
+                <img src="./clothingImg/image (6).png" alt="Image 6">
+                <figcaption>MAKE IT WORSE T-SHIRT</figcaption>
+            </figure>
+            <figure>
+                <img src="./clothingImg/image (5).png" alt="Image 5">
+                <figcaption>ANGEL T-SHIRT (DARK)</figcaption>
+            </figure>
+            <figure>
+                <img src="./clothingImg/image (4).png" alt="Image 4">
+                <figcaption>ANGEL T-SHIRT (LIGHT)</figcaption>
+            </figure>
+            <figure>
+                <img src="./clothingImg/image (3).png" alt="Image 3">
+                <figcaption>LURKER T-SHIRT</figcaption>
+            </figure>
+            <figure>
+                <img src="./clothingImg/image (2).png" alt="Image 2">
+                <figcaption>INFERNO T-SHIRT</figcaption>
+            </figure>
+            <figure>
+                <img src="./clothingImg/image (1).png" alt="Image 1">
+                <figcaption>SKELETONS T-SHIRT</figcaption>
+            </figure>
+            <!-- Fin des balises <figure> -->
+        </div>
+    </div>
+
+    <!-- PRELOADER -->
+    <script src="script.js"></script>
+
 
 </body>
 
