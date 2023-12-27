@@ -1,33 +1,40 @@
+@font-face {
+    font-family: 'SeaBreed';
+    src: url('./fonts/Respess Caps Medium.ttf') format('truetype');
+}
+
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #000000; /* Dark background color */
-    color: #fff; /* Text color */
+    font-family: SeaBreed;
+    background-color: #000000;
+    color: #fff;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh; /* 100% of the viewport height */
-    cursor: url("./cursor.png"), auto; /* Custom cursor */
+    height: 100vh;
+    cursor: url("./cursor.png"), auto;
 }
 
 h1 {
     font-size: 2.5em;
+    /* Ajuster la taille de la police pour les écrans normaux */
     margin-bottom: 20px;
 }
 
 .link-section {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
 
 .link-section a {
     text-decoration: none;
     color: #fff;
     font-size: 1.5em;
+    /* Ajuster la taille de la police pour les écrans normaux */
     margin: 0 10px;
 }
 
@@ -35,59 +42,24 @@ h1 {
     text-decoration: underline;
 }
 
+/* Media Query pour les écrans de petite taille */
+@media screen and (max-width: 600px) {
 
-/* Styles pour les écrans de petite taille (par exemple, smartphones) */
-@media only screen and (max-width: 767px) {
-    .container {
-      padding: 50px;
-      /* Ajuster l'espacement pour les écrans plus petits */
+    h1{
+        font-size: 1.8em;
+        /* Ajuster la taille de la police pour les petits écrans */
     }
-  
-    h1 {
-      font-size: 2em;
-      /* Réduire la taille de la police pour les écrans plus petits */
+
+    .link-section a{
+        font-size: 1.4em;
     }
-  
-    .image-section {
-      margin-top: 50px;
-      /* Ajuster l'espacement pour les écrans plus petits */
+
+    .link-section {
+        flex-direction: column;
+        align-items: center;
     }
-  
-    .image-section img {
-      max-width: 100%;
-      /* Faire en sorte que les images occupent la largeur totale de l'écran */
+
+    .link-section a {
+        margin: 10px 0;
     }
-  
-    .date {
-      padding: 20px;
-      /* Ajuster l'espacement pour les écrans plus petits */
-    }
-  }
-  
-  /* Styles pour les écrans moyens (par exemple, tablettes) */
-  @media only screen and (min-width: 768px) and (max-width: 1023px) {
-    .container {
-      padding: 80px;
-      /* Ajuster l'espacement pour les écrans de taille moyenne */
-    }
-  
-    h1 {
-      font-size: 2.5em;
-      /* Ajuster la taille de la police pour les écrans de taille moyenne */
-    }
-  
-    .image-section {
-      margin-top: 80px;
-      /* Ajuster l'espacement pour les écrans de taille moyenne */
-    }
-  
-    .image-section img {
-      max-width: 100%;
-      /* Faire en sorte que les images occupent la largeur totale de l'écran */
-    }
-  
-    .date {
-      padding: 25px;
-      /* Ajuster l'espacement pour les écrans de taille moyenne */
-    }
-  }
+}
