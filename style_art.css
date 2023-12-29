@@ -1,7 +1,8 @@
 @font-face {
-  font-family: 'TypeWritter';
-  src: url('./fonts/Type\ Machine.ttf') format('truetype');
+  font-family: 'CultiveMono';
+  src: url('./fonts/CutiveMono-Regular.ttf') format('truetype');
 }
+
 
 html {
   background: url("./backgroundImg/background-dark.png") no-repeat center center fixed;
@@ -15,7 +16,7 @@ html {
 }
 
 body {
-  font-family: TypeWritter;
+  font-family: CultiveMono;
   margin: 0;
   padding: 0;
   color: #fff;

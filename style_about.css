@@ -1,0 +1,150 @@
+@font-face {
+    font-family: 'CultiveMono';
+    src: url('./fonts/CutiveMono-Regular.ttf') format('truetype');
+  }
+  
+  
+  html {
+    background: url("./backgroundImg/background-dark.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    cursor: url("./cursor.png"), auto;
+    background-color: #000000;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: CultiveMono;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+  }
+  
+  .container {
+    text-align: center;
+    padding: 100px;
+  }
+  
+  h1 {
+    font-size: 3em;
+  }
+  
+  .image-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+  }
+  
+  
+  .image-section img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  a {
+    font-size: 1.4em;
+    text-decoration: none;
+    color: rgb(165, 165, 165);
+  }
+  
+  .date {
+    padding: 30px;
+  }
+  
+  figcaption {
+    font-size: 1.2em;
+    font-style: italic;
+    color: rgb(70, 70, 70);
+  }
+  
+  .gif-logo {
+    position: fixed;
+    top: 50px;
+    right: 50px;
+    width: 100px;
+  }
+
+  .lien-about{
+    /* color: green; */
+    font-size: 1.2em;
+
+  }
+
+  p{
+    margin: 10px;
+    font-size: 1.2em;
+
+  }
+  
+  /* Styles pour les écrans de petite taille (par exemple, smartphones) */
+  @media only screen and (max-width: 767px) {
+    .container {
+      padding: 50px;
+      /* Ajuster l'espacement pour les écrans plus petits */
+    }
+  
+    h1 {
+      font-size: 2em;
+      /* Réduire la taille de la police pour les écrans plus petits */
+    }
+  
+    .image-section {
+      margin-top: 50px;
+      /* Ajuster l'espacement pour les écrans plus petits */
+    }
+  
+    .image-section img {
+      max-width: 100%;
+      /* Faire en sorte que les images occupent la largeur totale de l'écran */
+    }
+  
+    .date {
+      padding: 20px;
+      /* Ajuster l'espacement pour les écrans plus petits */
+    }
+  }
+  
+  /* Styles pour les écrans moyens (par exemple, tablettes) */
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .container {
+      padding: 80px;
+      /* Ajuster l'espacement pour les écrans de taille moyenne */
+    }
+  
+    h1 {
+      font-size: 2.5em;
+      /* Ajuster la taille de la police pour les écrans de taille moyenne */
+    }
+  
+    .image-section {
+      margin-top: 80px;
+      /* Ajuster l'espacement pour les écrans de taille moyenne */
+    }
+  
+    .image-section img {
+      max-width: 100%;
+      /* Faire en sorte que les images occupent la largeur totale de l'écran */
+    }
+  
+    .date {
+      padding: 25px;
+      /* Ajuster l'espacement pour les écrans de taille moyenne */
+    }
+  }
+  
+  .image-section img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .image-section img:hover {
+    transform: scale(1.2);
+  }
