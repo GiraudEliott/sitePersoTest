@@ -2,15 +2,17 @@
     font-family: 'CultiveMono';
     src: url('./fonts/CutiveMono-Regular.ttf') format('truetype');
 }
+
 html {
-  background: url("./backgroundImg/background-dark.png") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-color: #000000;
-  scroll-behavior: smooth;
+    background: url("./backgroundImg/background-dark.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: #000000;
+    scroll-behavior: smooth;
 }
+
 body {
     margin: 0;
     padding: 0;
@@ -54,20 +56,20 @@ h1 {
     color: #a5a5a5;
 }
 
-.content-index{
+.content-index {
     padding: 20px;
     /* border: 2px solid #514f42; */
     /* background-color: #353324; */
 }
 
-.gif-logo{
+.gif-logo {
     width: 300px;
     height: 300px;
     margin-bottom: 20px;
 
 }
 
-.link-mix{
+.link-mix {
     text-decoration: none;
     color: #ff0000;
     font-size: 1.5em;
@@ -76,7 +78,7 @@ h1 {
     border: 1px solid #ff0000;
 }
 
-.link-mix:hover{
+.link-mix:hover {
     color: #000000;
     background-color: #ff0000;
 
@@ -85,19 +87,19 @@ h1 {
 /* Media Query pour les écrans de petite taille */
 @media screen and (max-width: 600px) {
 
-    h1{
+    h1 {
         font-size: 1.8em;
         /* Ajuster la taille de la police pour les petits écrans */
     }
 
-    .link-section a{
+    .link-section a {
         font-size: 1.4em;
     }
 
     .link-section {
         flex-direction: column;
         align-items: center;
-        
+
     }
 
     .link-section a {
