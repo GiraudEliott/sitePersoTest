@@ -117,3 +117,17 @@ figcaption {
 .image-section img:hover {
   transform: scale(1.2);
 }
+
+/* Additional styles for smaller screens (e.g., smartphones) */
+@media only screen and (max-width: 767px) {
+  .footer-content {
+    padding: 20px; /* Adjust padding for smaller screens */
+  }
+}
+
+/* Additional styles for medium screens (e.g., tablets) */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .footer-content {
+    padding: 30px; /* Adjust padding for medium screens */
+  }
+}
